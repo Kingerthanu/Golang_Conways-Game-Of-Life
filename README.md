@@ -5,3 +5,5 @@ Bloom Patterns (As Outlined Through Constants) On The Grid And Will Show The Gri
 Golang And How To Handle Goroutines Compared To Other Means Of Mulithreading Like What I've Done In C++.
 
 -----
+
+**The Breakdown:**
