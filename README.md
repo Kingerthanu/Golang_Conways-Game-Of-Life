@@ -6,6 +6,9 @@ Golang And How To Handle Goroutines Compared To Other Means Of Mulithreading Lik
 
 -----
 
+<img src="https://github.com/user-attachments/assets/6ab13164-1e5f-4b16-b91c-383ecca48976" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/6ab13164-1e5f-4b16-b91c-383ecca48976" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/6ab13164-1e5f-4b16-b91c-383ecca48976" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/6ab13164-1e5f-4b16-b91c-383ecca48976" alt="Cornstarch <3" width="55" height="49">
+
+
 **The Breakdown:**
 
 The Process Starts By Initializing 2 Matrixes -- _old_matrix_ & _new_matrix_ -- These Two Matrixes Basically Work As Front And Back Buffers If You Think Of It In Rendering Means. The _old_matrix_ Holds The Old Generation State, While The _new_matrix_ Holds The New Generation State. Both Of These Matrixes Are Allocated With The Same Size, As Assumed By The Constant Variables Defined At The Top Of The Main **_conways.go_** File (_MATRIX_ROWS_ & _MATRIX_COLS_). After Allocation, The _old_matrix_ Is Initialized With The Dead Icon Which Is Also Defined In The Top Constants. While, Technically We Don't Need To Do This -- As The First Iteration Will Have The Default Value Of 0 -- It Is Better To Set It Up So We Don't Have 2 Iterations Of Setup (Default Is 0, First Scan Sets All To Dead, THEN We Finally Do Our Logic).
@@ -22,6 +25,12 @@ In `checkNeighbors(...)` It Will Save Away The _aliveCount_ Of Neighboring Cells
 
 After Each Worker Checks Their Given Range Of Cells, We -- As The Main Thread -- Wait Till All Them Conclude, Then We Print Results Of Our New, Updated Matrix (_new_matrix_) Then We Swap Both, Finally Just Waiting If Necessary To Ensure Proper Framerating.
 
+<img src="https://github.com/user-attachments/assets/33ca5408-42e7-4b88-8ef7-d23816253092" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/33ca5408-42e7-4b88-8ef7-d23816253092" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/33ca5408-42e7-4b88-8ef7-d23816253092" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/33ca5408-42e7-4b88-8ef7-d23816253092" alt="Cornstarch <3" width="55" height="49">
+
 ----
 
- 
+<img src="https://github.com/user-attachments/assets/31491277-77c4-45b9-9ea9-a2a46467ca9a" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/31491277-77c4-45b9-9ea9-a2a46467ca9a" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/31491277-77c4-45b9-9ea9-a2a46467ca9a" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/31491277-77c4-45b9-9ea9-a2a46467ca9a" alt="Cornstarch <3" width="55" height="49">
+
+**Features:**
+
+<img src="https://github.com/user-attachments/assets/7414c500-119e-4732-9850-04924f722e38" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/7414c500-119e-4732-9850-04924f722e38" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/7414c500-119e-4732-9850-04924f722e38" alt="Cornstarch <3" width="55" height="49"> <img src="https://github.com/user-attachments/assets/7414c500-119e-4732-9850-04924f722e38" alt="Cornstarch <3" width="55" height="49">
